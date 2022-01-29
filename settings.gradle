@@ -1,0 +1,12 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    // Arctic Fox 버전 이후에 생성된 프로젝트는 build.gradle이 아닌 settings.gradle에 아래와같이 allprojects 레포지토리를 추가합니다.
+    repositories {
+        google()
+        mavenCentral()
+        flatDir { dirs 'libs' }
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "BasicStructureProject"
+include ':app'
