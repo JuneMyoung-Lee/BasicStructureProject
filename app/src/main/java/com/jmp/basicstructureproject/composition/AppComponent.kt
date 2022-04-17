@@ -3,6 +3,7 @@ package com.jmp.basicstructureproject.composition
 import com.jmp.basicstructureproject.AppApplication
 import com.jmp.basicstructureproject.MainActivity
 import com.jmp.basicstructureproject.composition.component.MainComponent
+import com.jmp.basicstructureproject.composition.module.ServiceModule
 import com.jmp.basicstructureproject.composition.module.ViewModelModule
 import dagger.BindsInstance
 import dagger.Component
@@ -11,7 +12,7 @@ import javax.inject.Singleton
 @Singleton
 @Component(
     modules = [
-        ViewModelModule::class
+        ViewModelModule::class, ServiceModule::class
     ]
 )
 interface AppComponent {

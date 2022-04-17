@@ -16,7 +16,13 @@ class AppApplication: MultiDexApplication() {
     object CONST {
         const val PROJECT_OWNER = "JuneMyoungLee"
 
+        const val KEY_PREF_ACCESS_TOKEN = "access_token"
+        const val KEY_PREF_REFRESH_TOKEN = "refresh_token"
+
         const val cookieStoreName = "myCookies"
+
+        var baseApiUrl : String = BuildConfig.GRADLE_API_BASE_URL
+        var baseWebUrl : String = BuildConfig.GRADLE_WEB_BASE_URL
 
         lateinit var cookieManager: WebKitSyncCookieManager
     }
